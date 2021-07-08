@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Deno | Run with Debugger",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "deno",
+      "runtimeArgs": ["run", "--inspect-brk", "-A", "${file}"],
+      "port": 9229,
+      "console": "internalConsole", 
+      "outputCapture": "std",
+    },
+    {
+      "name": "Deno | Test with Debugger",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "deno",
+      "runtimeArgs": ["test", "--inspect-brk", "-A", "${file}"],
+      "port": 9229,
+      "console": "internalConsole", 
+      "outputCapture": "std",
+    }
+  ]
+}
